@@ -277,6 +277,402 @@ body{
     margin-top: 20px;
 }
 
+.section3{
+    margin-top: 50px;
+    position: relative;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .head-txt h1{
+    color: #76ABAE;
+    font-size: 80px;
+    opacity: 0.2;
+    text-align: center;
+}
+
+.section3 .head-txt h2{
+    position: absolute;
+    top: 28px;
+    left: 225px;
+    font-size: 35px;
+    color: #F7E7DC;
+}
+
+.section3 .skills{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 .skills .item1{
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item1 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item1 img{
+    height: 30px;
+}
+
+.section3 .skills .item1 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item1 :nth-child(3){
+    margin-left: 395px;
+}
+
+.section3 .skills .item1 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item1 .front-line{
+    height: 10px;
+    width: 500px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item2{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item2 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item2 img{
+    height: 30px;
+}
+
+.section3 .skills .item2 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item2 :nth-child(3){
+    margin-left: 395px;
+}
+
+.section3 .skills .item2 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item2 .front-line{
+    height: 10px;
+    width: 500px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item3{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item3 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item3 img{
+    height: 30px;
+}
+
+.section3 .skills .item3 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item3 :nth-child(3){
+    margin-left: 290px;
+}
+
+.section3 .skills .item3 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item3 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item4{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item4 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item4 img{
+    height: 30px;
+}
+
+.section3 .skills .item4 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item4 :nth-child(3){
+    margin-left: 310px;
+}
+
+.section3 .skills .item4 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item4 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item5{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item5 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item5 img{
+    height: 30px;
+}
+
+.section3 .skills .item5 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item5 :nth-child(3){
+    margin-left: 310px;
+}
+
+.section3 .skills .item5 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item5 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item6{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item6 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item6 img{
+    height: 30px;
+}
+
+.section3 .skills .item6 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item6 :nth-child(3){
+    margin-left: 315px;
+}
+
+.section3 .skills .item6 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item6 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item7{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item7 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item7 img{
+    height: 30px;
+}
+
+.section3 .skills .item7 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item7 :nth-child(3){
+    margin-left: 355px;
+}
+
+.section3 .skills .item7 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item7 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item8{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item8 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item8 img{
+    height: 40px;
+}
+
+.section3 .skills .item8 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item8 :nth-child(3){
+    margin-left: 300px;
+}
+
+.section3 .skills .item8 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item8 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
+
+.section3 .skills .item9{
+    margin-top: 50px;
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
+.section3 .skills .item9 .head{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section3 .skills .item9 img{
+    height: 30px;
+}
+
+.section3 .skills .item9 span{
+    font-size: 22px;
+    color: #F7E7DC;
+}
+
+.section3 .skills .item9 :nth-child(3){
+    margin-left: 300px;
+}
+
+.section3 .skills .item9 .back-line{
+    height: 10px;
+    width: 590px;
+    background-color: #f7e7dc50;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.section3 .skills .item9 .front-line{
+    height: 10px;
+    width: 450px;
+    background-color: #76ABAE;
+    border-radius: 100px 0 0 100px;
+}
 
 @media only screen and (min-width:375px) and (max-width:425px){
     .section1{
@@ -378,6 +774,231 @@ body{
         color: #F7E7DC;
         font-size: 18px;
         margin-top: 20px;
+    }
+
+    .section3 .skills{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section3 .head-txt h1{
+        font-size: 50px;
+    }
+
+    .section3 .head-txt h2{
+        position: absolute;
+        top: 15px;
+        left: 150px;
+        font-size: 25px;
+    }
+    
+    .section3 .skills .item1 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item1 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item1 :nth-child(3){
+        margin-left: 265px;
+    }
+
+    .section3 .skills .item1 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item1 .front-line{
+        height: 8px;
+        width: 350px;
+    }
+    
+    .section3 .skills .item2 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item2 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item2 :nth-child(3){
+        margin-left: 265px;
+    }
+    
+    .section3 .skills .item2 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item2 .front-line{
+        height: 8px;
+        width: 350px;
+    }
+
+    .section3 .skills .item3 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item3 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item3 :nth-child(3){
+        margin-left: 165px;
+    }
+    
+    .section3 .skills .item3 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item3 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item4 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item4 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item4 :nth-child(3){
+        margin-left: 175px;
+    }
+    
+    .section3 .skills .item4 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item4 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item5 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item5 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item5 :nth-child(3){
+        margin-left: 180px;
+    }
+    
+    .section3 .skills .item5 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item5 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item6 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item6 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item6 :nth-child(3){
+        margin-left: 190px;
+    }
+    
+    .section3 .skills .item6 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item6 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item7 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item7 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item7 :nth-child(3){
+        margin-left: 220px;
+    }
+    
+    .section3 .skills .item7 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item7 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item8 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item8 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item8 :nth-child(3){
+        margin-left: 185px;
+    }
+    
+    .section3 .skills .item8 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item8 .front-line{
+        height: 8px;
+        width: 300px;
+    }
+
+    .section3 .skills .item9 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item9 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item9 :nth-child(3){
+        margin-left: 145px;
+    }
+    
+    .section3 .skills .item9 .back-line{
+        height: 8px;
+        width: 400px;
+    }
+    
+    .section3 .skills .item9 .front-line{
+        height: 8px;
+        width: 300px;
     }
 }
 
@@ -481,5 +1102,234 @@ body{
         color: #F7E7DC;
         font-size: 18px;
         margin-top: 25px;
+    }
+
+    .section3 .head-txt h1{
+        font-size: 45px;
+    }
+
+    .section3 .head-txt h2{
+        position: absolute;
+        top: 13px;
+        left: 40px;
+        font-size: 25px;
+    }
+
+    .section3 .head-txt h1{
+        font-size: 45px;
+    }
+
+    .section3 .head-txt h2{
+        position: absolute;
+        top: 13px;
+        left: 200px;
+        font-size: 25px;
+    }
+
+    .section3 .skills .item1 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item1 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item1 :nth-child(3){
+        margin-left: 360px;
+    }
+
+    .section3 .skills .item1 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item1 .front-line{
+        height: 8px;
+        width: 450px;
+    }
+    
+    .section3 .skills .item2 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item2 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item2 :nth-child(3){
+        margin-left: 365px;
+    }
+    
+    .section3 .skills .item2 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item2 .front-line{
+        height: 8px;
+        width: 450px;
+    }
+
+    .section3 .skills .item3 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item3 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item3 :nth-child(3){
+        margin-left: 268px;
+    }
+    
+    .section3 .skills .item3 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item3 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item4 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item4 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item4 :nth-child(3){
+        margin-left: 275px;
+    }
+    
+    .section3 .skills .item4 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item4 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item5 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item5 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item5 :nth-child(3){
+        margin-left: 275px;
+    }
+    
+    .section3 .skills .item5 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item5 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item6 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item6 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item6 :nth-child(3){
+        margin-left: 290px;
+    }
+    
+    .section3 .skills .item6 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item6 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item7 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item7 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item7 :nth-child(3){
+        margin-left: 320px;
+    }
+    
+    .section3 .skills .item7 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item7 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item8 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item8 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item8 :nth-child(3){
+        margin-left: 285px;
+    }
+    
+    .section3 .skills .item8 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item8 .front-line{
+        height: 8px;
+        width: 400px;
+    }
+
+    .section3 .skills .item9 img{
+        height: 20px;
+    }
+    
+    .section3 .skills .item9 span{
+        font-size: 18px;
+        color: #F7E7DC;
+    }
+    
+    .section3 .skills .item9 :nth-child(3){
+        margin-left: 240px;
+    }
+    
+    .section3 .skills .item9 .back-line{
+        height: 8px;
+        width: 500px;
+    }
+    
+    .section3 .skills .item9 .front-line{
+        height: 8px;
+        width: 400px;
     }
 }
