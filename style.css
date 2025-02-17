@@ -160,6 +160,12 @@ body{
     position: relative;
 }
 
+.section2 .head-txt{
+    animation-name: section2-ani;
+    animation-timeline: view();
+    animation-range: entry -10% cover 80%;
+}
+
 .section2 .head-txt h1{
     color: #76ABAE;
     font-size: 80px;
@@ -189,11 +195,13 @@ body{
     from {
         opacity: 0;
         top: -70%;
+        scale: 0.5;
     }
 
     to {
         opacity: 1;
         top: 10%;
+        scale: 1.0;
     }
 }
 
@@ -699,7 +707,7 @@ body{
     .section2 .head-txt h2{
         position: absolute;
         top: 15px;
-        left: 100px;
+        left: 130px;
         font-size: 25px;
     }
 
@@ -790,7 +798,7 @@ body{
     .section3 .head-txt h2{
         position: absolute;
         top: 15px;
-        left: 150px;
+        left: 130px;
         font-size: 25px;
     }
     
@@ -804,17 +812,17 @@ body{
     }
     
     .section3 .skills .item1 :nth-child(3){
-        margin-left: 265px;
+        margin-left: 215px;
     }
 
     .section3 .skills .item1 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item1 .front-line{
         height: 8px;
-        width: 350px;
+        width: 250px;
     }
     
     .section3 .skills .item2 img{
@@ -827,17 +835,17 @@ body{
     }
     
     .section3 .skills .item2 :nth-child(3){
-        margin-left: 265px;
+        margin-left: 215px;
     }
     
     .section3 .skills .item2 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item2 .front-line{
         height: 8px;
-        width: 350px;
+        width: 250px;
     }
 
     .section3 .skills .item3 img{
@@ -850,17 +858,17 @@ body{
     }
     
     .section3 .skills .item3 :nth-child(3){
-        margin-left: 165px;
+        margin-left: 115px;
     }
     
     .section3 .skills .item3 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item3 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item4 img{
@@ -873,17 +881,17 @@ body{
     }
     
     .section3 .skills .item4 :nth-child(3){
-        margin-left: 175px;
+        margin-left: 120px;
     }
     
     .section3 .skills .item4 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item4 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item5 img{
@@ -896,17 +904,17 @@ body{
     }
     
     .section3 .skills .item5 :nth-child(3){
-        margin-left: 180px;
+        margin-left: 115px;
     }
     
     .section3 .skills .item5 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item5 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item6 img{
@@ -919,17 +927,17 @@ body{
     }
     
     .section3 .skills .item6 :nth-child(3){
-        margin-left: 190px;
+        margin-left: 115px;
     }
     
     .section3 .skills .item6 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item6 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item7 img{
@@ -942,17 +950,17 @@ body{
     }
     
     .section3 .skills .item7 :nth-child(3){
-        margin-left: 220px;
+        margin-left: 115px;
     }
     
     .section3 .skills .item7 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item7 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item8 img{
@@ -965,17 +973,17 @@ body{
     }
     
     .section3 .skills .item8 :nth-child(3){
-        margin-left: 185px;
+        margin-left: 115px;
     }
     
     .section3 .skills .item8 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item8 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 
     .section3 .skills .item9 img{
@@ -988,17 +996,17 @@ body{
     }
     
     .section3 .skills .item9 :nth-child(3){
-        margin-left: 145px;
+        margin-left: 165px;
     }
     
     .section3 .skills .item9 .back-line{
         height: 8px;
-        width: 400px;
+        width: 350px;
     }
     
     .section3 .skills .item9 .front-line{
         height: 8px;
-        width: 300px;
+        width: 250px;
     }
 }
 
@@ -1111,225 +1119,87 @@ body{
     .section3 .head-txt h2{
         position: absolute;
         top: 13px;
-        left: 40px;
-        font-size: 25px;
-    }
-
-    .section3 .head-txt h1{
-        font-size: 45px;
-    }
-
-    .section3 .head-txt h2{
-        position: absolute;
-        top: 13px;
-        left: 200px;
+        left: 250px;
         font-size: 25px;
     }
 
     .section3 .skills .item1 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item1 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item1 :nth-child(3){
-        margin-left: 360px;
-    }
 
-    .section3 .skills .item1 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item1 .front-line{
-        height: 8px;
-        width: 450px;
-    }
-    
     .section3 .skills .item2 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item2 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item2 :nth-child(3){
-        margin-left: 365px;
-    }
-    
-    .section3 .skills .item2 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item2 .front-line{
-        height: 8px;
-        width: 450px;
-    }
 
     .section3 .skills .item3 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item3 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item3 :nth-child(3){
-        margin-left: 268px;
-    }
-    
-    .section3 .skills .item3 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item3 .front-line{
-        height: 8px;
-        width: 400px;
-    }
 
     .section3 .skills .item4 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item4 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item4 :nth-child(3){
-        margin-left: 275px;
-    }
-    
-    .section3 .skills .item4 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item4 .front-line{
-        height: 8px;
-        width: 400px;
-    }
 
     .section3 .skills .item5 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item5 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item5 :nth-child(3){
-        margin-left: 275px;
-    }
-    
-    .section3 .skills .item5 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item5 .front-line{
-        height: 8px;
-        width: 400px;
-    }
 
     .section3 .skills .item6 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item6 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item6 :nth-child(3){
-        margin-left: 290px;
-    }
-    
-    .section3 .skills .item6 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item6 .front-line{
-        height: 8px;
-        width: 400px;
-    }
 
     .section3 .skills .item7 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item7 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item7 :nth-child(3){
-        margin-left: 320px;
-    }
-    
-    .section3 .skills .item7 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item7 .front-line{
-        height: 8px;
-        width: 400px;
-    }
-
     .section3 .skills .item8 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item8 span{
         font-size: 18px;
         color: #F7E7DC;
     }
-    
-    .section3 .skills .item8 :nth-child(3){
-        margin-left: 285px;
-    }
-    
-    .section3 .skills .item8 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item8 .front-line{
-        height: 8px;
-        width: 400px;
-    }
 
     .section3 .skills .item9 img{
-        height: 20px;
+        height: 30px;
     }
     
     .section3 .skills .item9 span{
         font-size: 18px;
         color: #F7E7DC;
-    }
-    
-    .section3 .skills .item9 :nth-child(3){
-        margin-left: 240px;
-    }
-    
-    .section3 .skills .item9 .back-line{
-        height: 8px;
-        width: 500px;
-    }
-    
-    .section3 .skills .item9 .front-line{
-        height: 8px;
-        width: 400px;
     }
 }
