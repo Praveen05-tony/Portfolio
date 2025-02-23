@@ -1,0 +1,1400 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes nav {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    position: relative;
+    color: #FFE6E6;
+    padding-bottom: 5px;
+}
+
+.nav a i {
+    margin-right: 10px;
+}
+
+.nav a:hover {
+    color: #FF2626;
+    transition: all 1s;
+}
+
+/* .nav a::before{
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #FF2626;
+    position: absolute;
+} */
+
+.nav a::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #FF2626;
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.nav a:hover::before,
+.nav a:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.section {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img {
+    position: relative;
+    animation-name: section-img;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes section-img {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.section .content {
+    position: relative;
+    animation-name: section-content;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes section-content {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.section .content p {
+    color: #FF2626;
+}
+
+.section .content .am {
+    font-size: 25px;
+}
+
+.section .content .name {
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: 20px;
+}
+
+.section .content .developer {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.section .content button {
+    padding: 10px 20px;
+    background-color: #FF2626;
+    color: #FFE6E6;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section .content button:hover {
+    background-color: #FFE6E6;
+    box-shadow: 0 0 10px #FF2626;
+    color: #FF2626;
+    transition: all 1s;
+}
+
+.section .content button i {
+    margin-left: 10px;
+    position: relative;
+    animation-name: jump;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.section-content {
+    color: #FFE6E6;
+    width: 75%;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    word-spacing: 5px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        scale: 1;
+    }
+}
+
+.section-content span {
+    color: #FF2626;
+}
+
+.about .back {
+    margin-top: 100px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.about {
+    position: relative;
+}
+
+.about .back .back-text {
+    color: #FF2626;
+    font-family: "Train One", system-ui;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    opacity: 0.2;
+}
+
+.about .back .front-text {
+    color: #FFE6E6;
+    position: absolute;
+    top: 55px;
+    left: 575px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.about .info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.about .info img {
+    height: 400px;
+    border-radius: 20px;
+    border-radius: 39% 41% 45% 37% / 34% 54% 32% 62%;
+    animation-name: about-img;
+    transition: all 2s;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes about-img {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about .contact-info {
+    animation-name: about-info;
+    transition: all 2s;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes about-info {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about .info .contact-info p {
+    color: #FFE6E6;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.about .info .contact-info span {
+    color: #FF2626;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.line {
+    height: 5px;
+    width: 50px;
+    background-color: #FF2626;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.about .info .contact-info h1 {
+    color: #FFE6E6;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.about .info .contact-info h1 span {
+    color: #FF2626;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.education {
+    position: relative;
+}
+
+.education .back .back-text {
+    color: #FF2626;
+    font-family: "Train One", system-ui;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    opacity: 0.2;
+}
+
+.education .back .front-text {
+    color: #FFE6E6;
+    position: absolute;
+    top: 58px;
+    left: 575px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.education .back {
+    margin-top: 100px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.education-content .mca {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    /* transition: all 2s;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%; */
+}
+
+/* @keyframes mca {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 1;
+    }
+
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+        scale: 0.5;
+    }
+} */
+
+.education-content .mca i {
+    color: #FF2626;
+    font-size: 35px;
+}
+
+.education-content .mca .mca-content {
+    color: #FFE6E6;
+}
+
+.education-content .mca .mca-content h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FF2626;
+}
+
+.education-content .hsc {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    /* transition: all 2s;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%; */
+}
+
+/* @keyframes hsc {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+        scale: 1;
+    }
+} */
+
+.education-content .hsc i {
+    color: #FF2626;
+    font-size: 35px;
+}
+
+.education-content .hsc .hsc-content h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FF2626;
+}
+
+.education-content .hsc .hsc-content {
+    color: #FFE6E6;
+}
+
+.skills .images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.skills .images img{
+    height: 80px;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills .back .back-text {
+    color: #FF2626;
+    font-family: "Train One", system-ui;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    opacity: 0.2;
+}
+
+.skills .back .front-text {
+    color: #FFE6E6;
+    position: absolute;
+    top: 58px;
+    left: 630px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.skills .back {
+    margin-top: 100px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.skills .images .img1{
+    transition: all 1s;
+}
+
+.skills .images .img1:hover{
+    scale: 1.2;
+}
+
+.skills .images .img2{
+    transition: all 1s;
+}
+
+.skills .images .img2:hover{
+    scale: 1.2;
+}
+
+.skills .images .img3{
+    transition: all 1s;
+}
+
+.skills .images .img3:hover{
+    scale: 1.2;
+}
+
+.skills .images .img4{
+    transition: all 1s;
+}
+
+.skills .images .img4:hover{
+    scale: 1.2;
+}
+
+.skills .images .img5{
+    transition: all 1s;
+}
+
+.skills .images .img6{
+    transition: all 1s;
+}
+
+.skills .images .img6:hover{
+    scale: 1.2;
+}
+
+.skills .images .img5:hover{
+    scale: 1.2;
+}
+
+.my-project .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.my-project h1{
+    color: #FFE6E6;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    letter-spacing: 5px;
+}
+
+.my-project h1 span{
+    color: #FF2626;
+}
+
+.my-project .projects .project1{
+    height: 300px;
+    width: 300px;
+    background-color: #FFE6E6;
+    animation-name: project1;
+    transition: all 2s;
+    animation-timing-function: ease;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-project .projects .project1 img{
+    height: 200px;
+}
+
+.my-project .projects .project1:hover .btn{
+    bottom: 0;
+}
+
+.my-project .projects .project2:hover .btn{
+    bottom: 0;
+}
+
+.my-project .projects .project3:hover .btn{
+    bottom: 0;
+}
+
+@keyframes project1 {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.my-project .projects .project2{
+    height: 300px;
+    width: 300px;
+    background-color: #FFE6E6;
+    animation-name: project2;
+    transition: all 2s;
+    animation-timing-function: ease;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-project .projects .project2 img{
+    height: 200px;
+}
+
+@keyframes project2 {
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.my-project .projects .project3{
+    height: 300px;
+    width: 300px;
+    background-color: #FFE6E6;
+    animation-name: project3;
+    transition: all 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@keyframes project3 {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn {
+    background-color: #FF2626;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: -55px;
+    transition: all 1s;
+}
+
+.btn .btn1{
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFE6E6;
+    color: #000000;
+}
+
+.btn .btn2{
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFE6E6;
+    color: #000000;
+}
+
+.contact .back .back-text {
+    color: #FF2626;
+    font-family: "Train One", system-ui;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    opacity: 0.2;
+}
+
+.contact .back .front-text {
+    color: #FFE6E6;
+    position: absolute;
+    top: 58px;
+    left: 580px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.contact form{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.contact form input{
+    width: 49%;
+    height: 50px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    border: none;
+    padding: 20px;
+}
+
+.contact form .subject{
+    width: 99%;
+}
+
+.contact form textarea{
+    width: 99%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+}
+
+.contact form button{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #FFE6E6;
+    background-color: #FF2626;
+    border: none;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.media-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.media-icon i{
+    color: #FFE6E6;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 1s;
+    margin-bottom: 50px;
+}
+
+.media-icon i:hover{
+    color: #FF2626;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+    .nav {
+        justify-content: space-evenly;
+    }
+
+    .nav a {
+        font-size: smaller;
+    }
+
+    .section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .section .content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section .content .am {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section .content .name {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .section .content .developer {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .section .content button {
+        padding: 10px 15px;
+        background-color: #FF2626;
+        color: #FFE6E6;
+        border-radius: 50px;
+        border: none;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .section-content {
+        color: #FFE6E6;
+        width: 100%;
+        font-size: 12px;
+        line-height: 35px;
+        text-align: left;
+        word-spacing: 0px;
+        padding: 15px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .about .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.5;
+    }
+
+    .about .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 120px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .about .info {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .about .info img {
+        animation: none;
+        height: 250px;
+    }
+
+    .about .contact-info {
+        animation: none;
+    }
+
+    .about .info .contact-info p {
+        color: #FFE6E6;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .about .info .contact-info span {
+        color: #FF2626;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .about .info .contact-info h1 {
+        color: #FFE6E6;
+        margin-bottom: 30px;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .about .info .contact-info h1 span {
+        color: #FF2626;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .education .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.5;
+    }
+
+    .education .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 120px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .education-content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .education-content .mca {
+        animation-name: mca-mobile;
+        transition: all 2s;
+    }
+
+    @keyframes mca-mobile {
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .education-content .mca i {
+        color: #FF2626;
+        font-size: 25px;
+    }
+    
+    .education-content .mca .mca-content h2 {
+        font-size: 20px;
+    }
+
+    .education-content .hsc {
+        animation-name: mca-mobile;
+        transition: all 2s;
+    }
+
+    .education-content .hsc i {
+        color: #FF2626;
+        font-size: 25px;
+    }
+    
+    .education-content .hsc .hsc-content h2 {
+        font-size: 20px;
+    }
+
+    .skills .images img{
+        height: 30px;
+    }
+
+    .skills .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+    
+    .skills .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 150px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .my-project h1{
+        color: #FFE6E6;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+        letter-spacing: 5px;
+    }
+
+    .my-project .projects{
+        /* flex-direction: column; */
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .contact .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+
+    .contact .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 100px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .contact form{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+    
+}
+
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .nav {
+        justify-content: space-evenly;
+    }
+
+    .nav a {
+        font-size: medium;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .section img {
+        height: 300px;
+    }
+
+    .section .content .am {
+        font-size: 20px;
+    }
+
+    .section .content .name {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .section .content .developer {
+        font-size: large;
+        letter-spacing: 2px;
+    }
+
+    .section-content {
+        color: #FFE6E6;
+        width: 100%;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        word-spacing: 0px;
+        padding: 25px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .about .info {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .about .info img {
+        animation: none;
+        height: 300px;
+    }
+
+    .about .contact-info {
+        animation: none;
+    }
+
+    .about .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.5;
+    }
+
+    .about .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 295px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .about .info .contact-info p {
+        color: #FFE6E6;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .about .info .contact-info span {
+        color: #FF2626;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .about .info .contact-info h1 {
+        color: #FFE6E6;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    .about .info .contact-info h1 span {
+        color: #FF2626;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .about .info img {
+        height: 250px;
+        border-radius: 20px;
+        border-radius: 39% 41% 45% 37% / 34% 54% 32% 62%;
+        animation-name: about-img;
+        transition: all 2s;
+        animation-timing-function: linear;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    @keyframes about-img {
+        from {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .about .contact-info {
+        animation-name: about-info;
+        transition: all 2s;
+        animation-timing-function: linear;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    @keyframes about-info {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .education .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.5;
+    }
+
+    .education .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 295px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .education-content {
+        justify-content: center;
+    }
+
+    .skills .images img{
+        height: 65px;
+    }
+
+    .skills .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+    
+    .skills .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 325px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .my-project .projects{
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+
+    .contact .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 70px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+
+    .contact .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 40px;
+        left: 275px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .nav {
+        justify-content: space-evenly;
+    }
+
+    .nav a {
+        font-size: medium;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .section img {
+        height: 450px;
+    }
+
+    .section .content .am {
+        font-size: 30px;
+    }
+
+    .section .content .name {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .section .content .developer {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .section-content {
+        color: #FFE6E6;
+        width: 75%;
+        font-size: 25px;
+        line-height: 50px;
+        text-align: center;
+        word-spacing: 5px;
+        padding: 25px;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    .about .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 58px;
+        left: 400px;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .education .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 100px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.5;
+    }
+
+    .education .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 58px;
+        left: 400px;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .skills .images img{
+        height: 80px;
+    }
+
+    .skills .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 100px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+    
+    .skills .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 58px;
+        left: 430px;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .my-project .projects{
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+
+    .contact .back .back-text {
+        color: #FF2626;
+        font-family: "Train One", system-ui;
+        font-size: 100px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 5px;
+        opacity: 0.2;
+    }
+
+    .contact .back .front-text {
+        color: #FFE6E6;
+        position: absolute;
+        top: 58px;
+        left: 390px;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+}
