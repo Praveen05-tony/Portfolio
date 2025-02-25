@@ -2,11 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #000000;
     font-family: "Faculty Glyphic", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #FFE6E6;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FF2626;
+    border-radius: 100px;
 }
 
 .nav {
@@ -711,6 +726,10 @@ body {
     color: #000000;
 }
 
+.contact{
+    position: relative;
+}
+
 .contact .back .back-text {
     color: #FF2626;
     font-family: "Train One", system-ui;
@@ -792,6 +811,10 @@ body {
     color: #FF2626;
 }
 
+.fa-arrow-up{
+    display: none;
+}
+
 @media only screen and (min-width:320px) and (max-width:425px) {
     .nav {
         justify-content: space-evenly;
@@ -808,7 +831,7 @@ body {
 
     .section img {
         height: 180px;
-        width: 50%;
+        border-radius: 100%;
     }
 
     .section .content {
@@ -970,7 +993,7 @@ body {
     }
 
     .skills .images img{
-        height: 30px;
+        height: 40px;
     }
 
     .skills .back .back-text {
@@ -1028,6 +1051,20 @@ body {
         animation: scroll linear;
         animation-timeline: view();
         animation-range: entry 0 cover 40%;
+    }
+
+    .arrow{
+        text-decoration: none;
+    }
+
+    .fa-arrow-up{
+        display: block;
+        color: #FFE6E6;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        color: #FF2626;
+        background-color: #FFE6E6;
     }
     
 }
@@ -1253,6 +1290,10 @@ body {
         font-weight: bold;
         letter-spacing: 5px;
     }
+
+    .fa-arrow-up{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:769px) and (max-width:1024px) {
@@ -1379,5 +1420,9 @@ body {
         font-size: 35px;
         font-weight: bold;
         letter-spacing: 5px;
+    }
+
+    .fa-arrow-up{
+        display: none;
     }
 }
