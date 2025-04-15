@@ -263,6 +263,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 1s;
+  text-decoration: none;
 }
 
 .section3 .right .download:hover {
